@@ -18,7 +18,7 @@ function login(headers_template) {
   });
 }
 
-function reset (headers_template, pass) {
+function reset(headers_template, pass) {
   protectedUrl = `http://${HOST}/${pass}/userRpm/SysRebootRpm.htm?Reboot=Reboot`
   return fetch(protectedUrl, {
     headers: {
@@ -42,7 +42,7 @@ function reset (headers_template, pass) {
     Cookie,
     "Upgrade-Insecure-Requests": "1"
   }
-  login(headers_template).then( response => response.text().then(_ => {
+  login(headers_template).then( response => response.text().then(_=> {
     var regexConst = new RegExp(`http://${HOST}/([A-Z]*)/userRpm/Index.htm`);
     const match_pass = _.match(regexConst)
     if (match_pass && match_pass instanceof Array && match_pass.length === 2){
