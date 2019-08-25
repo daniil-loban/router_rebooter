@@ -1,0 +1,25 @@
+{
+  "name": "modem_rebooter",
+  "version": "1.0.0",
+  "description": "I updated the firmware in my TL-MR3420 and a cmd ( ``` curl -H \"Referer: http://192.168.0.1/userRpm/SysRebootRpm.htm\" -H \"Authorization:Basic YW1bpxmkYTphbWlubGRh\" http://192.168.0.1/userRpm/SysRebootRpm.htm?Reboot=Reboot ``` ) stopped working. So I decided to use selenium, but because there are frames there and it doesn't to get through. I used wireshark to study what is happening and in the end it turned out...:)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniil-loban/modem_rebooter.git"
+  },
+  "keywords": [],
+  "author": "Daniil Loban",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniil-loban/modem_rebooter/issues"
+  },
+  "homepage": "https://github.com/daniil-loban/modem_rebooter#readme",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0"
+  }
+}
