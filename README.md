@@ -1,4 +1,4 @@
-# Modem Rebooter (NodeJS)
+# Router Rebooter (NodeJS)
 
 I updated the firmware in my TL-MR3420 and a cmd (
 ```
